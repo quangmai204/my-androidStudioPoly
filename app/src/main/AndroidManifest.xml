@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mainqph12700_mob204_duanmau_nguyenquangmai">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mainqph12700_MOB204_DuAnMau_NguyenQuangMai">
+        <activity android:name=".top10BestSell"></activity>
+        <activity android:name=".BookTotalThongKe" />
+        <activity android:name=".lvBill" />
+        <activity android:name=".billManage" />
+        <activity android:name=".lvBook" />
+        <activity android:name=".BookManage" />
+        <activity android:name=".lvTheLoai" />
+        <activity android:name=".addBook" />
+        <activity android:name=".lvNguoiDung" />
+        <activity android:name=".addUser" />
+        <activity android:name=".login" />
+        <activity android:name=".menu" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

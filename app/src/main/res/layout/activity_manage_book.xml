@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#E4DBDB"
+    tools:context=".BookManage">
+    <EditText
+        android:id="@+id/edMaSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã sách"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/spnTheLoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:layout_weight="4"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/button_plus_green"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edTenSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên sách" />
+    <EditText
+        android:id="@+id/edTacGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tác giả" />
+    <EditText
+        android:id="@+id/edSoLuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số lượng"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="12dp">
+        <Button
+            android:background="#857E7E"
+            android:id="@+id/btnAddManageBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="addManageBook"
+            android:text="Thêm"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_marginRight="112dp"
+            />
+        <Button
+            android:background="#857E7E"
+            android:id="@+id/btnCancelManageBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:onClick="cancelManageBook"
+            android:paddingRight="50dp"
+            android:text="Huỷ" />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="12dp"
+        android:background="#857E7E"
+        android:id="@+id/btnShowManageBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showManageBook"
+        android:text="SHOW"/>
+</LinearLayout>
